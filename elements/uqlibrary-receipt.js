@@ -28,16 +28,16 @@
       }
     },
     attached: function () {
-      this._success = (this._getQueryVariable("Success") == "1");
+      this._success = (this._getQueryVariable("Success") == 1);
       this._receiptNr = this._getQueryVariable("Receipt");
-      this._value = parseInt(this._getQueryVariable("AmountPaid") / 100);
+      this._value = parseInt(this._getQueryVariable("AmountPaid")) / 100;
     },
     /**
      * Returns a string
      * @private
      */
-    _successString: function () {
-      return (this._success ? "successful" : "unsuccessful");
+    _successString: function (success) {
+      return (success ? "successful" : "unsuccessful");
     },
     /**
      * Gets a query variable from the URL

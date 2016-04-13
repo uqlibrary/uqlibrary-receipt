@@ -18,15 +18,15 @@ Example:
     }
 
     p {
-      line-height: 1.2em;
+      /*line-height: 1.2em;*/
     }
   </style>
 
   <!-- Template -->
   <template>
       <p class="body1">Thank you for using the UQ online payments system.</p>
-      <p class="body1">Your transaction has been [[_successString()]] for the value of $[[_value]]</p>
-      <p class="body1">Please check your email for your receipt #[[_receiptNr]]</p><br />
+      <p class="body1">Your transaction has been <strong>[[_successString(_success)]]</strong> for the value of <strong>$[[_value]]</strong></p>
+      <p class="body1">Please check your email for your receipt <strong>#[[_receiptNr]]</strong></p><br />
   </template>
 
   <!-- Location of the script -->
