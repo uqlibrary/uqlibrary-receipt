@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/bash
 
 # Creates and updates the "gh-pages" branch of the current repository
 #
@@ -30,6 +30,7 @@ sed -i -e "s#\.\.#bower_components#g" .bowerrc
 # Remove all non-relevant content
 git rm -rf .gitignore
 git rm -rf bin
+git rm -rf test
 
 # Bower install
 bower cache clean # ensure we're getting the latest from the desired branch.
@@ -41,9 +42,9 @@ sed -i -e "s#\.\./#bower_components/#g" "index.html"
 sed -i -e "s#\.\./\.\./#\.\./bower_components/#g" "demo/index.html"
 
 # Send it all to github
-#git add -A .
-#git commit -am 'seed gh-pages'
-#git push -u origin gh-pages --force
+git add -A .
+git commit -am 'seed gh-pages'
+git push -u origin gh-pages --force
 
 cd "../..";
 echo `pwd`;
