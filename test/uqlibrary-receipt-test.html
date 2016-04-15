@@ -27,7 +27,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <test-fixture id="basic">
   <template>
-    <uqlibrary-receipt></uqlibrary-receipt>ß
+    <uqlibrary-receipt></uqlibrary-receipt>
   </template>
 </test-fixture>
 
@@ -36,16 +36,19 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   var amountPaid = 1099;
   var receiptNr = "12345678910";
 
-  // SET LOCATION IF NOT SET
-  if (window.location.search == '') {
-    window.location.search = "?Success="+success+"&AmountPaid="+amountPaid+"&Receipt="+receiptNr;
-  }
-
   suite('<uqlibrary-receipt> tests', function () {
     var element;
 
     setup(function () {
       element = fixture('basic');
+
+      // SET LOCATION IF NOT SET
+      if (window.location.search == '') {
+        element._value = amountPaid / 100;
+        element._success = success == 1;
+        element._receiptNr = receiptNr;
+      }
+
     });
 
     test('It should load data', function () {
