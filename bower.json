@@ -1,6 +1,6 @@
 {
   "name": "uqlibrary-receipt",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "keywords": [
     "seed",
     "polymer",
@@ -16,6 +16,10 @@
     "uqlibrary-styles": "uqlibrary/uqlibrary-styles"
   },
   "devDependencies": {
-    "web-component-tester": "*"
+    "web-component-tester": "*",
+    "test-fixture": "PolymerElements/test-fixture#^1.1.0"
+  },
+  "resolutions": {
+    "test-fixture": "^1.1.0"
   }
 }
