@@ -1,0 +1,33 @@
+<link rel="import" href="elements.html">
+
+<!--
+`<uqlibrary-receipt>` is a simple element that reads receipt data from the URL
+
+Example:
+
+    <uqlibrary-receipt></uqlibrary-receipt>
+
+@demo
+-->
+<dom-module id="uqlibrary-receipt">
+  <!-- Template -->
+  <template>
+    <!-- All element styles -->
+    <style is="custom-style" include="iron-flex iron-flex-alignment common-styles">
+      :host {
+        font-size: var(--body-font-size);
+      }
+
+      p {
+        /*line-height: 1.2em;*/
+      }
+    </style>
+
+      <p class="body1">Thank you for using the UQ online payments system.</p>
+      <p class="body1">Your transaction of <strong>$[[_value]]</strong> has been <strong>[[_successString(_success)]]</strong>.</p>
+      <p class="body1">Please check your email for your receipt <strong>#[[_receiptNr]]</strong></p><br />
+  </template>
+
+  <!-- Location of the script -->
+  <script src="uqlibrary-receipt.js"></script>
+</dom-module>

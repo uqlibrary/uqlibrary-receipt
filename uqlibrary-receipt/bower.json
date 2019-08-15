@@ -1,0 +1,21 @@
+{
+  "name": "uqlibrary-receipt",
+  "version": "1.0.10",
+  "keywords": ["seed", "polymer", "web-components"],
+  "private": true,
+  "main": "elements/uqlibrary-receipt.html",
+  "dependencies": {
+    "iron-elements": "PolymerElements/iron-elements#^1.0.8",
+    "paper-elements": "PolymerElements/paper-elements#^1.0.7",
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "polymer": "Polymer/polymer#^1.11.3",
+    "uqlibrary-styles": "uqlibrary/uqlibrary-styles"
+  },
+  "devDependencies": {
+    "web-component-tester": "*",
+    "test-fixture": "PolymerElements/test-fixture#^1.1.2"
+  },
+  "resolutions": {
+    "test-fixture": "^1.1.2"
+  }
+}

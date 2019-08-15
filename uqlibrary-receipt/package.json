@@ -1,0 +1,34 @@
+{
+  "name": "uqlibrary-receipt",
+  "version": "1.0.10",
+  "license": "MIT",
+  "main": "index.html",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "polymer test",
+    "start": "polymer serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uqlibrary/uqlibrary-receipt.git"
+  },
+  "keywords": [
+    "receipt",
+    "uq",
+    "library"
+  ],
+  "bugs": {
+    "url": "https://github.com/uqlibrary/uqlibrary-receipt/issues"
+  },
+  "devDependencies": {
+    "bower": "^1.8.8",
+    "chai": "^4.2.0",
+    "web-component-tester": "*"
+  },
+  "engines": {
+    "npm": "^6",
+    "node": "11.10.1"
+  }
+}
