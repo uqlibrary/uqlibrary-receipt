@@ -1,12 +1,8 @@
 #!/bin/bash
 
-echo "Setting up tests for branch: ${CI_BRANCH}"
+set -e
 
-if [ ${CI_BRANCH} != "gh-pages" ]; then
-    npm install -g bower web-component-tester polymer-cli
-    npm install
-    bower install
+printf "Node "; node -v;
+printf "npm v"; npm -v
 
-    echo "Running tests for branch: ${CI_BRANCH}"
-    npm test
-fi;
+npm test

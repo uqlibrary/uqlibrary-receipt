@@ -1,11 +1,7 @@
 {
   "name": "uqlibrary-receipt",
-  "version": "1.0.9",
-  "keywords": [
-    "seed",
-    "polymer",
-    "web-components"
-  ],
+  "version": "1.0.10",
+  "keywords": ["seed", "polymer", "web-components"],
   "private": true,
   "main": "elements/uqlibrary-receipt.html",
   "dependencies": {
