@@ -4,7 +4,7 @@
 [![Dependency Status](https://david-dm.org/uqlibrary/uqlibrary-receipt.svg)](https://david-dm.org/uqlibrary/uqlibrary-receipt)
 [![Dev Dependency Status](https://david-dm.org/uqlibrary/uqlibrary-receipt/dev-status.svg)](https://david-dm.org/uqlibrary/uqlibrary-receipt?type=dev)
 
-A simple element that takes pulls apart the query string and shows a Payment Receipt page based on those values. 
+A simple element that takes pulls apart the query string and shows a Payment Receipt page based on those values.
 
 See [the full documentation](https://uqlibrary.github.io/uqlibrary-receipt/uqlibrary-receipt/).
 
@@ -21,7 +21,7 @@ bower install
 - Please adhere to the Polymer code style guide provided at [Style Guide](http://polymerelements.github.io/style-guide/).
 - Colors and common styles are imported (bower install) from [uqlibrary-styles](http://github.com/uqlibrary/uqlibrary-styles).
 - A preview of the component can be viewed locally by running `npm start`. Use the second URL from the command output.
-- GitHub pages should be updated after every commit to `polymer1.0` branch by running `bin/generate-gh-pages.sh`
+- GitHub pages should be updated after every commit to `master` branch by running `bin/generate-gh-pages.sh`
 
 ## Testing
 
@@ -33,8 +33,8 @@ npm test
 
 ## Query string variables
 
-|Variable|Description|
-|--------|-----------|
-|Success|Either '1' or '0'. Determines whether the payment was successful|
-|AmountPaid|The value that was paid in cents|
-|Receipt|The receipt number of the transaction|
+| Variable   | Description                                                      |
+| ---------- | ---------------------------------------------------------------- |
+| Success    | Either '1' or '0'. Determines whether the payment was successful |
+| AmountPaid | The value that was paid in cents                                 |
+| Receipt    | The receipt number of the transaction                            |

@@ -1,21 +1,24 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=no">
-  <title>Tests</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=no"
+    />
+    <title>Tests</title>
 
-  <script src="../../webcomponentsjs/webcomponents.js"></script>
-  <script src="../../web-component-tester/browser.js"></script>
-</head>
+    <script src="../../webcomponentsjs/webcomponents.js"></script>
+    <script src="../../web-component-tester/browser.js"></script>
+  </head>
 
-<body>
-<script>
-  document.cookie="UQLMockData=enabled";
-  // Load and run all tests (.html, .js) as one suite:
-  WCT.loadSuites([
-    'uqlibrary-receipt-test.html?Success=1&AmountPaid=1099&Receipt=12345678910'
-  ]);
-</script>
-</body>
+  <body>
+    <script>
+      document.cookie = "UQLMockData=enabled";
+      // Load and run all tests (.html, .js) as one suite:
+      WCT.loadSuites([
+        "uqlibrary-receipt-test.html?Success=1&AmountPaid=1099&Receipt=12345678910",
+      ]);
+    </script>
+  </body>
 </html>
