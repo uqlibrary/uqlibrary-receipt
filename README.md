@@ -13,7 +13,6 @@ See [the full documentation](https://uqlibrary.github.io/uqlibrary-receipt/uqlib
 ```sh
 npm install -g bower web-component-tester polymer-cli
 npm install
-bower install
 ```
 
 ## Developing

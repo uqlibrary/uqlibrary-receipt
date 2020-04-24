@@ -1,12 +1,14 @@
 {
   "name": "uqlibrary-receipt",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "license": "MIT",
   "main": "index.html",
   "directories": {
     "test": "test"
   },
   "scripts": {
+    "postinstall": "bower update",
+    "cleandeps": "THISDIR=${PWD##*/}; BOWERDEPS=$(ls ../ --hide=$THISDIR); cd ..; rm -rf $BOWERDEPS $THISDIR/node_modules",
     "test": "polymer test",
     "start": "polymer serve"
   },
